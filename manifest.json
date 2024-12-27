@@ -8,7 +8,7 @@
     "permissions": ["menus", "activeTab", "downloads"],
     "host_permissions": ["*://*.wordreference.com/*"],
     "icons": {
-        "32": "icon.png"
+        "32": "icons/icon_32.png"
     },
     "background": {
         "scripts": ["background.js"]
