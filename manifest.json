@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "WordReference Peek",
+    "version": "0.1",
+    "description": "Peek at some word on a WordReference",
+    "permissions": ["menus", "activeTab", "downloads"],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+      },
+    "host_permissions": ["*://*.wordreference.com/*"],
+    "icons": {
+        "16": "favicon.ico",
+        "32": "favicon.ico"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.wordreference.com/*"],
+            "js": ["exportHistory.js"]
+        },
+        {
+            "matches": ["<all_urls>"],
+            "js": ["peek.js"],
+            "exclude_matches": ["https://www.wordreference.com/*"]
+        }
+    ]
+}
