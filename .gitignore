@@ -1,0 +1,5 @@
+node_modules/
+icon.svg
+*.zip
+package.json
+package-lock.json

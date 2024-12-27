@@ -2,9 +2,12 @@
 
 WordReference Peek is a Firefox extension that allows users to quickly peek at word on WordReference.
 
+![](screenshot2.png)
+
 ## Features
 
 -   **Peek**: Select a word, Right-click to open the menu, Click on `Pick at this word on WordReference` or press `Alt+W`.
+
 -   **Export WR Search History**: Go on the https://wordreference.com website and right-click.
 
 ## License

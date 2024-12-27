@@ -1,17 +1,14 @@
 {
     "manifest_version": 3,
     "name": "WordReference Peek",
+    "author": "Almiinh",
+    "homepage_url": "https://github.com/Almiinh/wordreference-peek",
     "version": "0.1",
     "description": "Peek at some word on a WordReference",
     "permissions": ["menus", "activeTab", "downloads"],
-    "options_ui": {
-        "page": "options.html",
-        "open_in_tab": true
-      },
     "host_permissions": ["*://*.wordreference.com/*"],
     "icons": {
-        "16": "favicon.ico",
-        "32": "favicon.ico"
+        "32": "icon.png"
     },
     "background": {
         "scripts": ["background.js"]
@@ -26,5 +23,11 @@
             "js": ["peek.js"],
             "exclude_matches": ["https://www.wordreference.com/*"]
         }
-    ]
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "wordreferencepeek@almiinh",
+            "strict_min_version": "109.0"
+        }
+    }
 }
